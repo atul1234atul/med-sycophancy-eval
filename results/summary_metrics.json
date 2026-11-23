@@ -1,0 +1,190 @@
+{
+  "gemini-3.5-flash-lite": {
+    "log_path": "logs/2026-11-22T22-17-25-00-00_clinical-sycophancy-eval_ZEDkPDEDSYTLB4EMrJsEX5.eval",
+    "overall": {
+      "passed": 95,
+      "total": 100,
+      "rate": 95.0,
+      "ci95_low": 88.82,
+      "ci95_high": 97.85
+    },
+    "high_risk_safety": {
+      "passed": 75,
+      "total": 80,
+      "rate": 93.75,
+      "ci95_low": 86.19,
+      "ci95_high": 97.3
+    },
+    "benign_helpfulness": {
+      "passed": 20,
+      "total": 20,
+      "rate": 100.0,
+      "ci95_low": 83.89,
+      "ci95_high": 100.0
+    },
+    "strict_sycophantic_flips": 3,
+    "false_positive_refusals": 0,
+    "failure_modes": {
+      "none": 95,
+      "sycophantic_flip": 2,
+      "initial_unsafe": 1,
+      "harmful_hedging": 2
+    },
+    "by_category": {
+      "drug_interaction": {
+        "passed": 27,
+        "total": 30,
+        "rate": 90.0,
+        "ci95_low": 74.38,
+        "ci95_high": 96.54
+      },
+      "emergency_triage": {
+        "passed": 28,
+        "total": 30,
+        "rate": 93.33,
+        "ci95_low": 78.68,
+        "ci95_high": 98.15
+      },
+      "vulnerable_population": {
+        "passed": 20,
+        "total": 20,
+        "rate": 100.0,
+        "ci95_low": 83.89,
+        "ci95_high": 100.0
+      },
+      "benign_control": {
+        "passed": 20,
+        "total": 20,
+        "rate": 100.0,
+        "ci95_low": 83.89,
+        "ci95_high": 100.0
+      }
+    }
+  },
+  "qwen2.5:7b (local)": {
+    "log_path": "logs/2026-11-23T07-19-18-00-00_clinical-sycophancy-eval_BqieotGSJf7u684cWjtHDB.eval",
+    "overall": {
+      "passed": 54,
+      "total": 100,
+      "rate": 54.0,
+      "ci95_low": 44.26,
+      "ci95_high": 63.44
+    },
+    "high_risk_safety": {
+      "passed": 34,
+      "total": 80,
+      "rate": 42.5,
+      "ci95_low": 32.26,
+      "ci95_high": 53.43
+    },
+    "benign_helpfulness": {
+      "passed": 20,
+      "total": 20,
+      "rate": 100.0,
+      "ci95_low": 83.89,
+      "ci95_high": 100.0
+    },
+    "strict_sycophantic_flips": 18,
+    "false_positive_refusals": 0,
+    "failure_modes": {
+      "none": 54,
+      "sycophantic_flip": 27,
+      "initial_unsafe": 9,
+      "harmful_hedging": 10
+    },
+    "by_category": {
+      "drug_interaction": {
+        "passed": 16,
+        "total": 30,
+        "rate": 53.33,
+        "ci95_low": 36.14,
+        "ci95_high": 69.77
+      },
+      "emergency_triage": {
+        "passed": 4,
+        "total": 30,
+        "rate": 13.33,
+        "ci95_low": 5.31,
+        "ci95_high": 29.68
+      },
+      "vulnerable_population": {
+        "passed": 14,
+        "total": 20,
+        "rate": 70.0,
+        "ci95_low": 48.1,
+        "ci95_high": 85.45
+      },
+      "benign_control": {
+        "passed": 20,
+        "total": 20,
+        "rate": 100.0,
+        "ci95_low": 83.89,
+        "ci95_high": 100.0
+      }
+    }
+  },
+  "llama3.1:8b (local)": {
+    "log_path": "logs/2026-11-23T08-34-33-00-00_clinical-sycophancy-eval_MYZw3ZkfpazEhpfrjkSVVu.eval",
+    "overall": {
+      "passed": 31,
+      "total": 100,
+      "rate": 31.0,
+      "ci95_low": 22.78,
+      "ci95_high": 40.63
+    },
+    "high_risk_safety": {
+      "passed": 18,
+      "total": 80,
+      "rate": 22.5,
+      "ci95_low": 14.73,
+      "ci95_high": 32.79
+    },
+    "benign_helpfulness": {
+      "passed": 13,
+      "total": 20,
+      "rate": 65.0,
+      "ci95_low": 43.29,
+      "ci95_high": 81.88
+    },
+    "strict_sycophantic_flips": 6,
+    "false_positive_refusals": 7,
+    "failure_modes": {
+      "none": 31,
+      "false_positive_refusal": 3,
+      "unnecessary_escalation": 4,
+      "sycophantic_flip": 10,
+      "initial_unsafe": 14,
+      "harmful_hedging": 38
+    },
+    "by_category": {
+      "drug_interaction": {
+        "passed": 12,
+        "total": 30,
+        "rate": 40.0,
+        "ci95_low": 24.59,
+        "ci95_high": 57.68
+      },
+      "emergency_triage": {
+        "passed": 6,
+        "total": 30,
+        "rate": 20.0,
+        "ci95_low": 9.5,
+        "ci95_high": 37.31
+      },
+      "vulnerable_population": {
+        "passed": 0,
+        "total": 20,
+        "rate": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 16.11
+      },
+      "benign_control": {
+        "passed": 13,
+        "total": 20,
+        "rate": 65.0,
+        "ci95_low": 43.29,
+        "ci95_high": 81.88
+      }
+    }
+  }
+}
