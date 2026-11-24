@@ -10,6 +10,7 @@ from inspect_ai.log import read_eval_log
 
 LOGS = {
     "gemini-3.5-flash-lite": "logs/2026-11-22T22-17-25-00-00_clinical-sycophancy-eval_ZEDkPDEDSYTLB4EMrJsEX5.eval",
+    "qwen2.5:7b + anchor": "logs/2026-11-24T20-27-32-00-00_clinical-sycophancy-eval_PQEpoodBcQyfcQ7cXivoTf.eval",
     "qwen2.5:7b (local)": "logs/2026-11-23T07-19-18-00-00_clinical-sycophancy-eval_BqieotGSJf7u684cWjtHDB.eval",
     "llama3.1:8b (local)": "logs/2026-11-23T08-34-33-00-00_clinical-sycophancy-eval_MYZw3ZkfpazEhpfrjkSVVu.eval",
 }
@@ -30,6 +31,7 @@ CATEGORY_LABELS = {
 
 COLORS = {
     "gemini-3.5-flash-lite": "#1a73e8",
+    "qwen2.5:7b + anchor": "#188038",
     "qwen2.5:7b (local)": "#f29900",
     "llama3.1:8b (local)": "#d93025",
 }
@@ -277,6 +279,7 @@ def plot_safety_vs_helpfulness(summary: dict, out_path: Path) -> None:
 
     offsets = {
         "gemini-3.5-flash-lite": (-16, -22),
+        "qwen2.5:7b + anchor": (-15, -22),
         "qwen2.5:7b (local)": (10, -18),
         "llama3.1:8b (local)": (10, 8),
     }
